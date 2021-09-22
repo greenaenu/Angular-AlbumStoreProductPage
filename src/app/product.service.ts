@@ -21,8 +21,8 @@ return this._http.get(this._albumUrl).map(response =><Album>
 
 getProducts():Observable<Product[]>
 {
-  return this._http.get(this._productsUrl).map(response =><Product[]>
-response.json());
+  return this._http.get(this._productsUrl).map(response =>
+  <Product[]>response.json());
 }
 }
 
